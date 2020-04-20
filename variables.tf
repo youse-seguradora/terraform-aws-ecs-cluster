@@ -13,5 +13,11 @@ variable "ecs_setting" {
     value = string
   }))
   description = "Configuration block(s) with cluster settings. For example, this can be used to enable CloudWatch Container Insights for a cluster."
-  default     = null
+  default     = []
+}
+
+variable "tags" {
+  description = "A map of tags to add to ECS Cluster"
+  type        = map(string)
+  default     = {}
 }

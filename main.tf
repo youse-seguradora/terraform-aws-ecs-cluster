@@ -9,4 +9,6 @@ resource "aws_ecs_cluster" "this" {
       value = setting.value.value
     }
   }
+
+  tags = var.tags
 }
