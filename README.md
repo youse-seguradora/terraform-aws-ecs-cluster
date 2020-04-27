@@ -2,6 +2,22 @@
 
 This Terraform module creates an ECS cluster on AWS.
 
+## Examples
+
+Below an example for deloy a ECS cluster. See the example directroy for more and complete examples.
+
+```hcl
+local {
+  ecs_cluster_name = test
+}
+
+module "ecs_cluster" {
+  source = "git@github.com:youse-seguradora/terraform-aws-ecs-cluster.git"
+
+  ecs_cluster_name = var.ecs_cluster_name
+}
+```
+
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Providers
 
