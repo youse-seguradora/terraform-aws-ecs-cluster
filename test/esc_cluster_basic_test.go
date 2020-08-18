@@ -15,7 +15,7 @@ func TestIAMAccount(t *testing.T) {
 
 	// Expected value
 	expectedName := fmt.Sprintf("ecs-%s", strings.ToLower(random.UniqueId()))
-	awsRegion := "us-weast-2"
+	awsRegion := "us-west-2"
 
 	terraformOptions := &terraform.Options{
 		TerraformDir: "../examples/basic",
