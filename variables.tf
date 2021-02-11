@@ -21,3 +21,9 @@ variable "tags" {
   type        = map(string)
   default     = {}
 }
+
+variable "create_ecs" {
+  description = "Create a ECS Cluster?"
+  type        = bool
+  default     = false
+}
